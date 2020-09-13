@@ -14,7 +14,7 @@ div {
   width: 60%;
   padding: 30px;
   margin: 30px auto;
-  
+
   font-family: "Staatliches", cursive;
 }
 
@@ -97,7 +97,6 @@ hr {
 }
 a {
   color: rgb(112, 128, 144);
-  text-decoration: none;
 }
 a:visited {
   color: rgb(112, 128, 144);
@@ -105,7 +104,6 @@ a:visited {
 
 a:hover {
   color: black;
-  text-decoration: none;
 }
 
 li {
