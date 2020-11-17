@@ -9,7 +9,7 @@ if (minutes < 10) {
     minutes = `0${minutes}`;
 }
 
-timeElement.innerHTML = `${hours}: ${minutes}`;
+timeElement.innerHTML = `${hours} : ${minutes}`;
 
 function dDay(date) {
     let liveDay = date.getDay();
@@ -42,7 +42,7 @@ function dDay(date) {
     let year = date.getFullYear();
     let currentDate = date.getDate();
 
-    return `TODAY : ${day[liveDay]}, ${currentDate} ${month[monthIndex]}, ${year}`;
+    return `${day[liveDay]} ${currentDate} ${month[monthIndex]} ${year}`;
 }
 let dateElement = document.querySelector("#date");
 dateElement.innerHTML = dDay(currentTime);

@@ -7,11 +7,7 @@
     <title>ProjectWeek2+</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Fredoka+One&family=Staatliches&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap" rel="stylesheet">
+   
     <link rel="stylesheet" type="text/css" href="src/style.css" />
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -27,7 +23,7 @@
                             <input type="text" id="cityform-location" placeholder="Type in city" autofocus="on" />
                             <input type="submit" value="🔎" class="button1" />
                         </form>
-                        <button id="button2">📍 CURRENT LOCATION </button>
+                       
                         <div class="cityntime">
                             <h1 id="city">PARIS , FRANCE</h1>
                             <hr />
@@ -45,19 +41,8 @@
                             <img src="https://www.dovora.com/resources/weather-icons/showcase/modern_showcase/day_partial_cloud.png"
                                 width="130" />
                         </div>
-
-                        <div class="col">
-                            <div class="float-left">
-                                <p id="liveweather">SUNNY, PARTIALLY CLOUDY</p>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <img src="https://icons.iconarchive.com/icons/google/noto-emoji-travel-places/128/42650-thermometer-icon.png"
-                                width="120" />
-                        </div>
-
-                        <div class="col">
-                            <div class="float-left">
+                        
+                       <div class="col">
                                 <strong>
                                     <span class="livetemp" id="livetemp">19</span>
                                     <span class="units">
@@ -65,13 +50,18 @@
                                         <a href="#" id="fahrenheit-link">°F</a>
                                     </span>
                                 </strong>
-                                <hr />
-                                <span id="maxmin">max. 38°C | min. 23°C</span>
+                        </div>
+
+                        <div class="col">
+                            <div class="float-left">
+                                <p id="liveweather">SUNNY, PARTIALLY CLOUDY</p>
                             </div>
                         </div>
+                        
+
+                        
                     </div>
-                    <ul class="PHW">
-                        <li>PRECIPITATION : 15 % </li>
+                    <ul class="HW">
                         <li>HUMIDITY : 56 % </li>
                         <li>WIND : 5 km/h</li>
                     </ul>
@@ -81,7 +71,7 @@
         </div>
         <br />
 
-        <div class="row row-cols-5">
+        <div class="row row-cols-6">
             <div class="col">
                 <p class="day">SUN.</p>
                 <br />
@@ -120,6 +110,13 @@
                     class="cast" width="70" />
                 <br />
                 <p class="weektemp"><strong> 35°C</strong> | 22°C</p>
+            </div>
+            <div class="col">
+                <p class="day">FRI.</p>
+                <br />
+                <img src="https://www.dovora.com/resources/weather-icons/showcase/modern_showcase/day_rain_thunder.png" class="cast"
+                    width="70" /><br />
+                <p class="weektemp"><strong>36°C </strong>| 22°C</p>
             </div>
         </div>
     </div>
