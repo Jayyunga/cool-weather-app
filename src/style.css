@@ -1,6 +1,7 @@
 div {
   display: block;
 }
+
 .container {
   box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
   background-image: linear-gradient(
@@ -14,7 +15,6 @@ div {
   width: 60%;
   padding: 30px;
   margin: 30px auto;
-
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -59,7 +59,7 @@ hr {
   text-align: center;
   display: block;
   width: 100%;
-  font-family: "Staatliches", cursive;
+  font-family: Arial, Helvetica, sans-serif;
   color: rgb(112, 128, 144);
 }
 
@@ -115,6 +115,5 @@ li {
 }
 
 #city {
-  font-size: 34px
+  font-size: 34px;
 }
-

@@ -15,110 +15,58 @@
 
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-5">
-                <div class="weatherapp">
-                    <div class="searchcity">
-                        <form class="box" id="cityform">
-                            <input type="text" id="cityform-location" placeholder="Type in city" autofocus="on" />
-                            <input type="submit" value="🔎" class="button1" />
-                        </form>
-                       
-                        <div class="cityntime">
-                            <h1 id="city">PARIS , FRANCE</h1>
-                            <hr />
-                            <h1 id="time"></h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-7">
-                <div class="weatherdisplay">
-                    <h2 id="date"></h2>
-
-                    <div class="row row-cols-2">
-                        <div class="col">
-                            <img src="https://www.dovora.com/resources/weather-icons/showcase/modern_showcase/day_partial_cloud.png"
-                                width="130" />
-                        </div>
-                        
-                       <div class="col">
-                                <strong>
-                                    <span class="livetemp" id="livetemp">19</span>
-                                    <span class="units">
-                                        <a href="#" id="celsius-link">°C</a> |
-                                        <a href="#" id="fahrenheit-link">°F</a>
-                                    </span>
-                                </strong>
-                        </div>
-
-                        <div class="col">
-                            <div class="float-left">
-                                <p id="liveweather">SUNNY, PARTIALLY CLOUDY</p>
-                            </div>
-                        </div>
-                        
-
-                        
-                    </div>
-                    <ul class="HW">
-                        <li>HUMIDITY : 56 % </li>
-                        <li>WIND : 5 km/h</li>
-                    </ul>
-                    </p>
-                </div>
-            </div>
+    <div class="row">
+        <div class="col-sm-6"><div class="searchcity">
+            <form class="box" id="cityform">
+                <input type="text" id="cityform-location" placeholder="Type in city" autofocus="on" />
+                <input type="submit" value="🔎" class="button1" />
+            </form>
         </div>
-        <br />
-
-        <div class="row row-cols-6">
-            <div class="col">
-                <p class="day">SUN.</p>
-                <br />
-                <img src="https://www.dovora.com/resources/weather-icons/showcase/modern_showcase/day_rain_thunder.png"
-                    class="cast" width="70" /><br />
-                <p class="weektemp"><strong>36°C </strong>| 22°C</p>
-            </div>
-            <div class="col">
-                <p class="day">MON.</p>
-                <br />
-                <img src="https://www.dovora.com/resources/weather-icons/showcase/modern_showcase/day_rain_thunder.png"
-                    class="cast" width="70" />
-                <br />
-                <p class="weektemp"><strong>39°C</strong> | 23°C</p>
-            </div>
-            <div class="col">
-                <p class="day">TUES.</p>
-                <br />
-                <img src="https://www.dovora.com/resources/weather-icons/showcase/modern_showcase/angry_clouds.png"
-                    class="cast" width="70" />
-                <br />
-                <p class="weektemp"><strong>31°C</strong> | 23°C</p>
-            </div>
-            <div class="col">
-                <p class="day">WED.</p>
-                <br />
-                <img src="https://www.dovora.com/resources/weather-icons/showcase/modern_showcase/day_partial_cloud.png"
-                    class="cast" width="70" />
-                <br />
-                <p class="weektemp"><strong>32°C</strong> | 22°C</p>
-            </div>
-            <div class="col">
-                <p class="day">THUR.</p>
-                <br />
-                <img src="https://www.dovora.com/resources/weather-icons/showcase/modern_showcase/day_clear.png"
-                    class="cast" width="70" />
-                <br />
-                <p class="weektemp"><strong> 35°C</strong> | 22°C</p>
-            </div>
-            <div class="col">
-                <p class="day">FRI.</p>
-                <br />
-                <img src="https://www.dovora.com/resources/weather-icons/showcase/modern_showcase/day_rain_thunder.png" class="cast"
-                    width="70" /><br />
-                <p class="weektemp"><strong>36°C </strong>| 22°C</p>
-            </div>
+</div>
+        <div class="col-sm-6"><div class="weatherdisplay">
+            <h2 id="date"></h2>
+        </div></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6"><div class="cityntime">
+            <h1 id="city">PARIS , FRANCE</h1>
+            <hr />
+            <h1 id="time"></h1>
         </div>
+</div>
+        <div class="col-sm-6">
+            <ul>
+                <li>
+<div>
+    <img src="https://www.dovora.com/resources/weather-icons/showcase/modern_showcase/day_partial_cloud.png"
+        width="130" />
+
+    <span class="livetemp" id="livetemp">19</span>
+    <span class="units">
+        <a href="#" id="celsius-link">°C</a> |
+        <a href="#" id="fahrenheit-link">°F</a>
+    </span>
+                </li>
+                <li>
+                  <span id="description">SUNNY, PARTIALLY CLOUDY </span>
+                </li>
+                <ul class="HW">
+                    <li><span id="humidity">Humidity : 56 % </span></li>
+                    <li><span id="wind"> Wind: 5 km/h</span></li>
+                </ul>
+
+            </ul> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">1</div>
+        <div class="col-sm">2</div>
+        <div class="col-sm">3</div>
+        <div class="col-sm">4</div>
+        <div class="col-sm">5</div>
+        <div class="col-sm">6</div>
+    </div>
+        
     </div>
 
     <p class="signature">Coded by <a href=https://github.com/Jayyunga/cool-weather-app target="_blank">Jade Mayunga</a> </p> 
