@@ -11,6 +11,8 @@ function displayTemperature(response) {
     humidityElement.innerHTML = response.data.main.humidity;
     let windElement = document.querySelector("#wind");
     windElement.innerHTML = Math.round(response.data.wind.speed);
+    let liveiconElement = document.querySelector("#liveicon");
+    liveiconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`)
     }
 
 
