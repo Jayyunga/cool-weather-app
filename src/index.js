@@ -65,7 +65,21 @@ function dDay(date) {
 let dateElement = document.querySelector("#date");
 dateElement.innerHTML = dDay(currentTime);
 
+  
+  
+function searchCity(city) {
   let apiKey = "2094a2cc37204236b97edd7028b5edc3";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Brussels&appid=${apiKey}&units=metric`;
-
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
+}
+
+
+function submitCity(event) {
+  event.preventDefault();
+    let cityformlocationElement = document.querySelector("#cityform-location")
+    searchCity(cityformlocationElement.value);
+}
+searchCity("Brussels");
+
+  let formElement = document.querySelector("#cityform");
+  formElement.addEventListener("submit", submitCity);
