@@ -76,8 +76,12 @@ function searchCity(city) {
 
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
-  let forecast = response.data.list[0];
-  forecastElement.innerHTML = `
+  forecastElement.innerHTML = null;
+  let forecast = null;
+
+for (let index = 0; index < 6; index++) {
+forecast = response.data.list[index];
+forecastElement.innerHTML += `
      <div class="col-sm-2">
             <ul>
                 <li id="ftime">
@@ -89,13 +93,13 @@ ${forecastTime(forecast.dt *  1000)}
   }@2x.png" />
                 </li>
                 <li id="ftemp">
-<strong>${Math.round(forecast.main.temp_max)}°</strong> |${Math.round(forecast.main.temp_min)}°
+<strong>${Math.round(forecast.main.temp_max)}°</strong>  ${Math.round(forecast.main.temp_min)}°
                 </li>
             </ul>
         </div>
     
     `;
-  console.log(response.data);
+  }
 }
 
 function forecastTime(timestamp) {
