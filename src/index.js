@@ -43,24 +43,24 @@ function dDay(date) {
 
   let monthIndex = date.getMonth();
   let month = [
-    "JANUARY",
-    "FEBRUARY",
-    "MARCH",
-    "APRIL",
-    "MAY",
-    "JUNE",
-    "JULY",
-    "AUGUST",
-    "SEPTEMBER",
-    "OCTOBER",
-    "NOVEMBER",
-    "DECEMBER",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
   ];
 
   let year = date.getFullYear();
   let currentDate = date.getDate();
 
-  return `${day[liveDay]} ${currentDate} ${month[monthIndex]} ${year}`;
+  return `${day[liveDay]} ${currentDate}/${month[monthIndex]}/${year} (*UTC+1)`;
 }
 let dateElement = document.querySelector("#date");
 dateElement.innerHTML = dDay(currentTime);
