@@ -1,119 +1,34 @@
-div {
-  display: block;
-}
-
-.container {
-  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
-  background-image: linear-gradient(
-    to bottom,
-    #a0d8ef 0%,
-    #ddf1f9 65%,
-    #feffff 100%
-  );
-  border-radius: 5px;
-  color: rgb(112, 128, 144);
-  width: 60%;
-  padding: 30px;
-  margin: 30px auto;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.col {
-  text-align: center;
-}
-
-.live {
+.cool-weather-app{
+  max-width: 1000px;
   margin: 30px 0 auto;
-}
+  padding: 30px;
+  border: 3px solid #EA6E4B;
+  border-radius:6px ;
+} 
 
-.HW {
-  text-align: center;
-  margin: 40px 0 auto;
-}
-
-.cityntime {
-  margin: 85px 0 auto;
-}
-
-#date {
-  font-size: 20px;
-}
-
-h1 {
-  text-align: center;
-  font-size: 50px;
-}
-
-h2 {
-  text-align: right;
-}
-
-hr {
-  overflow: hidden;
-  border-style: inset;
-  border-width: 1px;
-}
-
-.signature {
-  font-size: 18px;
-  text-align: center;
-  display: block;
-  width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(112, 128, 144);
-}
-
-.day {
-  margin: auto;
-  border: 1px solid whitesmoke;
-  border-style: outset;
-}
-
-.weektemp {
-  font-family: "Raleway", sans-serif;
-  margin: 20px 0 auto;
-  font-size: 20px;
-}
-
-.cast {
-  margin: 0 auto;
-}
-
-#liveweather {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-#livetemp {
-  margin-top: 10px;
-  font-family: "Raleway", sans-serif;
-}
-#maxmin {
-  font-family: "Raleway", sans-serif;
-}
-.units {
-  font-size: 24px;
-  font-family: "Raleway", sans-serif;
-}
-a {
-  color: rgb(112, 128, 144);
-}
-a:visited {
-  color: rgb(112, 128, 144);
-}
-
-a:hover {
-  color: black;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 li {
-  list-style: none;
+ list-style: none;
 }
 
-.button1 {
-  margin: 0 5px auto;
+#forecast {
+  margin: 30px 0 auto;
+ 
+  width: 900px;
 }
 
-#city {
-  font-size: 34px;
+#ftime {
+  text-align: center;
+}
+
+#ficon {
+  text-align: center;
+}
+
+#ftemp {
+  text-align: center;
 }

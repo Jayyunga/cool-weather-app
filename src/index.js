@@ -79,21 +79,23 @@ function displayForecast(response) {
   forecastElement.innerHTML = null;
   let forecast = null;
 
-for (let index = 0; index < 6; index++) {
-forecast = response.data.list[index];
-forecastElement.innerHTML += `
+  for (let index = 0; index < 6; index++) {
+    forecast = response.data.list[index];
+    forecastElement.innerHTML += `
      <div class="col-sm-2">
             <ul>
                 <li id="ftime">
-${forecastTime(forecast.dt *  1000)}
+${forecastTime(forecast.dt * 1000)}
                 </li>
                 <li id="ficon">
 <img src="http://openweathermap.org/img/wn/${
-    forecast.weather[0].icon
-  }@2x.png" />
+      forecast.weather[0].icon
+    }@2x.png" />
                 </li>
                 <li id="ftemp">
-<strong>${Math.round(forecast.main.temp_max)}°</strong>  ${Math.round(forecast.main.temp_min)}°
+<strong>${Math.round(forecast.main.temp_max)}°</strong>  ${Math.round(
+      forecast.main.temp_min
+    )}°
                 </li>
             </ul>
         </div>
@@ -114,7 +116,6 @@ function forecastTime(timestamp) {
   }
   return `${hours}:${minutes}`;
 }
-
 
 function submitCity(event) {
   event.preventDefault();
